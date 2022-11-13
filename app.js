@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/data', (req, res) => {
-    console.log(data);
+    console.log(req.body);
     res.status(201).send('ok');
 })
 
